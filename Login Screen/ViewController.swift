@@ -9,17 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func loginButtonCicked(_ sender: Any) {
-        
+        validateFields()
     }
     
+    func validateFields(){
+        if textFieldEmail.text == "" {
+            makeAlert(alertTitle: "Error!", alertMessage: "Email not entered")
+        } else if textFieldPassword.text == "" {
+           makeAlert(alertTitle: "Error!", alertMessage: "Password not entered")
+        }
+    }
+    
+    func makeAlert(alertTitle: String, alertMessage: String) {
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertController.Style.alert)
+        let okButton  = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default) { (UIAlertAction) in
+            //
+            print("Button clicked")
+            
+        }
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
