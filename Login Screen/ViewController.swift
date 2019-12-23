@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         } else if textFieldPassword.text == "" {
            makeAlert(alertTitle: "Error!", alertMessage: "Password not entered")
         }
+        //validation has passed
+        else {
+            performSegue(withIdentifier: "toSecondViewController", sender: nil)
+        }
     }
     
     func makeAlert(alertTitle: String, alertMessage: String) {

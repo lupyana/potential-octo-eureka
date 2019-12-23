@@ -55,6 +55,7 @@
                     <connections>
                         <outlet property="textFieldEmail" destination="IFp-Lm-bJf" id="cF8-tL-UUw"/>
                         <outlet property="textFieldPassword" destination="F2f-PP-L6R" id="FLX-2G-5xh"/>
+                        <segue destination="D7y-jw-HGA" kind="presentation" identifier="toSecondViewController" modalPresentationStyle="fullScreen" id="Uz6-nc-EIQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,13 +69,23 @@
                     <view key="view" contentMode="scaleToFill" id="f9y-BR-df8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yq-UK-3df">
+                                <rect key="frame" x="97" y="237" width="220" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="d06-11-2gj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BmV-8a-2rK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4p-es-aei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="138"/>
+            <point key="canvasLocation" x="963.76811594202911" y="137.94642857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xGQ-Ri-fcm">
